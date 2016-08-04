@@ -42,7 +42,7 @@
                 var val = autoFillBar.find('.active').text();
                 input.val(val);
 
-            } else if (e.keyCode == 38) {
+            } else if (e.keyCode == 13) {
 
                 //тут можно сделать переход на страницу статьи или все что пожелаешь
 
