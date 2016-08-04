@@ -19,43 +19,47 @@ exports.post = function (req, res) {
 //===============================Три вида поиска, выбери свой! Закомментируй остальные ;)======================================//
 
 //===================================REGEX SEARCH===================================//
-
+//
 //        var searchRequestStart = '^' + req.body.request + '.*';
 //        var searchRequestMiddle = ' ' + req.body.request + '.*';
 //        var params = {};
-//        var searchArray = [];
-//        var containsCondition = {};
+//
 //        var searchCondition = [{title: {$regex: searchRequestStart, $options: 'im'}}, {title: {$regex: searchRequestMiddle, $options: 'im'}}];
 //
 //        if (req.body.request.indexOf(' ') != -1){
 //
-//            var strArray = req.body.str.split(' ');
+//            var strArray = req.body.request.split(' ');
 //            var moreConditions = [];
 //            var andCondition = {};
 //
 //            for (var i=0; i<strArray.length; i++){
-//                var searchRequestStartTemp = ' ' + strArray[i] + '.*';
-//                var searchRequestMiddleTemp = '^' + strArray[i] + '.*';
-//                var titleCondition = {};
 //
-//                titleCondition.$or = [{title: {$regex: searchRequestStartTemp, $options: 'im'}}, {title: {$regex: searchRequestMiddleTemp, $options: 'im'}}];
-//                moreConditions.push(titleCondition);
+//                if (strArray[i].length > 0){
+//
+//                    var searchRequestStartTemp = ' ' + strArray[i] + '.*';
+//                    var searchRequestMiddleTemp = '^' + strArray[i] + '.*';
+//                    var titleCondition = {};
+//
+//                    titleCondition.$or = [{title: {$regex: searchRequestStartTemp, $options: 'im'}}, {title: {$regex: searchRequestMiddleTemp, $options: 'im'}}];
+//                    moreConditions.push(titleCondition);
+//                }
+//
 //            }
 //
 //            andCondition.$and = moreConditions;
+////          andCondition.$or = moreConditions;
 //            searchCondition.push(andCondition);
 //
 //        }
 //
-//        containsCondition.$or = searchCondition;
-//        searchArray.push(containsCondition);
-//        params.$and = searchArray;
+//
+//        params.$or = searchCondition;
 //===================================END REGEX SEARCH===================================//
 
 
 //===================================TEXT OR SEARCH===================================//
 //        var params = {};
-//        var textKey = '\"' + req.body.request + '\"';
+//        //var textKey = '\"' + req.body.request + '\"';
 //        var textKey = req.body.request;
 //        params.$text = {$search: textKey};
 //===================================END TEXT OR SEARCH===================================//
