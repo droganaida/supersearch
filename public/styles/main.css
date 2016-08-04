@@ -1,0 +1,209 @@
+
+/*========================================== Сброс стилей ================================================*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color: #ffffff;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*========================================== Общие стили ================================================*/
+
+body {
+    font-size: 16px;
+    font-family: Helvetica, Arial, san-serif;
+    line-height: 1.6;
+    color:#595959;
+    background: #efefef;
+}
+
+a {
+    outline: none; text-decoration: underline; color: #1e1d26; transition: .3s;
+}
+a:hover {
+    color: #6a658e; transition: .3s;
+}
+
+p {
+    text-align: left;
+    margin: 20px 0;
+}
+
+h1 {font-size: 26px;}
+
+header, footer {
+    background: #605c7a; color: #ffffff; width: 100%; text-align: center;
+}
+
+footer {
+    font-size: 14px; padding: 10px 0;
+}
+
+.holder {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*========================================== Супер поиск ================================================*/
+
+input {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px 0;
+    border: 2px solid #d0cee5;
+    border-radius: 5px;
+    vertical-align :middle;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.searchHolder {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+}
+
+.autoFillBar {
+    background: #d0cee5;
+    width: 100%;
+    position: absolute;
+    top: 98px;
+    z-index: 9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.autoFillBar .item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    color: #1e1d26;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.autoFillBar .item:hover, .autoFillBar .item.active {
+    background: #e5e3f9;
+    transition: .2s;
+}
+
+.highlighted {
+    background: #ffe47d;
+}
+
+/*========================================== 404 ================================================*/
+
+.error {
+    color: #605c7a;
+    min-height: 400px;
+    margin: 40px 0;
+}
+
+.error .big {
+    font-size: 182px;
+    font-weight: 800;
+}
+
+.error .small {
+    font-size: 46px;
+}
